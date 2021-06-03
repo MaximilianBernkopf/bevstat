@@ -1,11 +1,17 @@
 Package: bevstat
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Visualizes data from Statistik Austria
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Maximilian Bernkopf
+Maintainer: Maximilian Bernkopf <maximilian.bernkopf@gmail.com>
+Description: Visualizes data from Statistik Austria
+    and a bit more.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
