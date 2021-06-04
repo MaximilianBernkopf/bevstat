@@ -81,6 +81,14 @@ preschool kids as follows
 plot_preschool_vs_average_age(population_summary_df)
 ```
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+<img src="man/figures/README-plot-1.png" width="100%" />
 
-Have fun.
+Oh and you also have the pipe `%>%` available:
+
+``` r
+add_x_and_y <- function(x,y){ x + y }
+5 %>% add_x_and_y(2)
+#> [1] 7
+```
+
+Have fun 🔥.

@@ -57,8 +57,15 @@ population_summary_df
 
 Finally you may plot the average age per commune vs the proportion of preschool kids as follows
 
-```{r pressure, message=FALSE}
+```{r plot, message=FALSE}
 plot_preschool_vs_average_age(population_summary_df)
 ```
 
-Have fun. 
+Oh and you also have the pipe ` %>% ` available:
+
+```{r pipe, message=FALSE}
+add_x_and_y <- function(x,y){ x + y }
+5 %>% add_x_and_y(2)
+```
+
+Have fun 🔥.
