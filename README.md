@@ -57,6 +57,10 @@ summarized. Furthermore, the state name is added, e.g., “Wien”,
 
 ``` r
 population_summary_df <- summarise_population_df(population_df)
+<<<<<<< HEAD
+=======
+#> Joining, by = "state_number"
+>>>>>>> bb4dffed6125577354ee389719ce7daf6969af49
 population_summary_df
 #> # A tibble: 203,079 x 7
 #>    state   commune_number commune    age relative_size_age_gr… average_age_per_…
@@ -77,10 +81,13 @@ population_summary_df
 Finally you may plot the average age per commune vs the proportion of
 preschool kids as follows
 
+<<<<<<< HEAD
 ``` r
 plot_preschool_vs_average_age(population_summary_df)
 ```
 
+=======
+>>>>>>> bb4dffed6125577354ee389719ce7daf6969af49
 <img src="man/figures/README-pressure-1.png" width="100%" />
 
 Have fun.
