@@ -1,0 +1,64 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# bevstat
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of bevstat is to visualize some population data from Statistik Austria.
+Especially the population data of Austria from the year 2020,
+which can be found [here](https://data.statistik.gv.at/web/meta.jsp?dataset=OGD_bevstandjbab2002_BevStand_2020).
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+``` r
+# install.packages("devtools")
+devtools::install_github("MaximilianBernkopf/bevstat")
+```
+
+## Example
+
+Via `get_population_data` you can download the relevant data
+and have certain internal codes replaced by more useful names.
+Alternatively you can also just use the data already available 
+in the package:
+
+```{r data example}
+library(bevstat)
+#population_df <- get_population_data()
+population_df
+```
+
+Next the function `summarise_population_df` performs some summary statistics.
+In particular it takes the data frame returned by `get_population_data` or `population_df` directly 
+and calculates the relative size of each age group per commune 
+as well as the average age in each commune. 
+Note that the information regarding gender is first summarized. 
+Furthermore, the state name is added, e.g., "Wien", "Burgenland" etc.
+
+```{r summary data example, message=FALSE}
+population_summary_df <- summarise_population_df(population_df)
+population_summary_df
+```
+
+Finally you may plot the average age per commune vs the proportion of preschool kids as follows
+
+```{r pressure, message=FALSE}
+plot_preschool_vs_average_age(population_summary_df)
+```
+
+Have fun. 
