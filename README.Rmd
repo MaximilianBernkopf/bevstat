@@ -50,22 +50,14 @@ as well as the average age in each commune.
 Note that the information regarding gender is first summarized. 
 Furthermore, the state name is added, e.g., "Wien", "Burgenland" etc.
 
-<<<<<<< HEAD
 ```{r summary data example, message=FALSE}
-=======
-```{r summary data example}
->>>>>>> bb4dffed6125577354ee389719ce7daf6969af49
 population_summary_df <- summarise_population_df(population_df)
 population_summary_df
 ```
 
 Finally you may plot the average age per commune vs the proportion of preschool kids as follows
 
-<<<<<<< HEAD
 ```{r pressure, message=FALSE}
-=======
-```{r pressure, echo = FALSE}
->>>>>>> bb4dffed6125577354ee389719ce7daf6969af49
 plot_preschool_vs_average_age(population_summary_df)
 ```
 
