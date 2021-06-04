@@ -24,7 +24,7 @@ summarise_population_df <- function(df) {
 
   # mapping table state to state number
   mapping_table_state <- tibble(state_number = c("1","2","3","4","5","6","7","8","9"),
-                                state = c("Burgenland", "Kärnten", "Niederösterreich", "Oberösterreich", "Salzburg", "Steiermark", "Tirol", "Vorarlberg", "Wien"))
+                                state = c("Burgenland", "K\u00e4rnten", "Nieder\u00f6sterreich", "Ober\u00f6sterreich", "Salzburg", "Steiermark", "Tirol", "Vorarlberg", "Wien"))
 
   # calculate summary statistics
   population_summary_df <- df %>%
